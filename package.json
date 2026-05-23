@@ -1,0 +1,15 @@
+{
+  "name": "ai-habit-tracker",
+  "private": true,
+  "scripts": {
+    "dev": "npx concurrently \"cd backend && npm run dev\" \"cd frontend/ai-habit-tracker-ui-boilerplate-code && npm run dev\"",
+    "build": "cd backend && npm install && cd ../frontend/ai-habit-tracker-ui-boilerplate-code && npm install && npm run build",
+    "install:all": "cd backend && npm install && cd ../frontend/ai-habit-tracker-ui-boilerplate-code && npm install"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

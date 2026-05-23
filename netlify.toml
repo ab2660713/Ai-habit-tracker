@@ -1,0 +1,17 @@
+[build]
+  command = "cd backend && npm install && cd ../frontend/ai-habit-tracker-ui-boilerplate-code && npm install && npm run build"
+  publish = "frontend/ai-habit-tracker-ui-boilerplate-code/dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  VITE_API_URL = "/api"
+  NODE_VERSION = "20"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["mongoose", "bcryptjs"]
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
