@@ -43,7 +43,7 @@ export default function AIChat() {
         ...m,
         {
           role: "assistant",
-          content: "Sorry, I couldn't answer that right now.",
+          content: "Sorry, I couldn't answer that right nows.",
         },
       ]);
     } finally {
